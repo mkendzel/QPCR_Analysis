@@ -13,14 +13,6 @@ long_ct$treatment <- factor(long_ct$treatment)
 long_ct$gene      <- factor(long_ct$gene)
 long_ct$mouse_id  <- factor(long_ct$mouse_id)
 
-
-#subset long_ct by tissue into separate dataframes for analysis
-lung <- long_ct %>% filter(tissue == "Lung")
-bone_marrow <- long_ct %>% filter(tissue == "Bone Marrow")
-spleen <- long_ct %>% filter(tissue == "Spleen")
-liver <- long_ct %>% filter(tissue == "Liver")
-
-
 # ---- 4) run linear mixed-effect model for each tissue ----
 
 #Create list of fit models for each tissue
