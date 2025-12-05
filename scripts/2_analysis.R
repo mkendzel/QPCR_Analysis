@@ -5,7 +5,7 @@ library(emmeans)
 library(knitr)
 # ---- 2) Import Data ----
 # import long-formatted .csv file from data/processed folder
-long_ct <- read.csv("data/processed/.csv")
+long_ct <- read.csv("data/processed/name_of_data.csv")
 
 # ---- 3) Format Data columns ----
 # Each categorical variable should be a factor
